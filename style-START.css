@@ -72,6 +72,10 @@ h6 {
   text-align: center;
 }
 
+.button:hover {
+  background-color: lightgray;
+}
+
 .code {
   width: 100%;
   height: 40%;
@@ -94,12 +98,44 @@ h6 {
 
 .editor__header {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   color: white;
   background: rgba(0, 0, 0, 0.8);
 }
 
 .editor__heading {
   flex-grow: 1;
+}
+
+.editor__code {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #1D1E22;
+  box-sizing: border-box;
+}
+
+.editor__gutter {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  line-height: 1;
+  font-size: 1.4em;
+  padding: 3px;
+  color: rgb(255,255,255, 0.6);
+  background-color: #1D1E22;
+}
+
+.editor__input {
+  width: 100%;
+  resize: none;
+  background-color: #1D1E22 ;
+  color: white;
+  border: none;
 }
 
 
