@@ -64,7 +64,6 @@ h6 {
   display: inline-block;
   padding: 10px 16px;
   margin-right: 10px;
-  /* position: relative; */
   border-radius: 4px;
   border: 3px solid transparent;
   background: #444857;
@@ -72,3 +71,35 @@ h6 {
   cursor: pointer;
   text-align: center;
 }
+
+.code {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  background-color: white;
+}
+
+.editor {
+  flex: 1 1 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 15px solid grey;
+  border-left: 15px solid grey;
+}
+
+.editor__header {
+  display: flex;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.editor__heading {
+  flex-grow: 1;
+}
+
+
